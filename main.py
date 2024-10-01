@@ -1,6 +1,19 @@
+import CRUD as crud
 import os
 
 if __name__ == "__main__":
+    
+    system_operation = os.name
+    match system_operation:
+        case "posix" : os.system("clear")
+        case "nt" : os.system("cls")
+        
+    print("SELAMAT DATANG CUI".center(110))
+    print("DATABASE PERPUSTKAAN SEDERHANA".center(110))
+    print("="*110)
+    
+    # membuat database.txt jika belum add
+    crud.init_console()
     
     while True:
         
@@ -11,9 +24,12 @@ if __name__ == "__main__":
             case "nt" : os.system("cls")
             
         #header
-        print("SELAMAT DATANG CUI".center(30))
-        print("DATABASE PERPUSTKAAN SEDERHANA")
-        print("==============================")
+        print("SELAMAT DATANG CUI".center(110))
+        print("DATABASE PERPUSTAKAAN SEDERHANA".center(110))
+        print("="*110)
+        # print("SELAMAT DATANG CUI".center(30))
+        # print("DATABASE PERPUSTKAAN SEDERHANA")
+        # print("==============================")
         
         #opsi
         print("\nOPSI YANG TERSEDIA: \n")
@@ -23,21 +39,22 @@ if __name__ == "__main__":
         print("4. Delete Data")
         
         opsi_user = input("\nSilahkan pilih opsi : ")
+        print('\n')
         
         #condition
-        print("\n==============================\n")
+        # print("\n==============================\n")
         
         match opsi_user:
-            case "1" : print("read")
+            case "1" : crud.read_console()
             case "2" : print("create")
             case "3" : print("update")
             case "4" : print("delete")
             case _ : print("Masukkan input yang valid!! (1/2/3/4)")
         
-        print("\n==============================\n")
+        # print("\n==============================\n")
         
         #break
-        is_break = input("Apakah anda ingin berhenti (y/n) : ")
+        is_break = input("\nApakah anda ingin berhenti (y/n) : ")
         if is_break == "y" or is_break == "Y":
             break
     
