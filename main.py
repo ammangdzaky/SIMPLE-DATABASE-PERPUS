@@ -46,7 +46,7 @@ if __name__ == "__main__":
         
         match opsi_user:
             case "1" : crud.read_console()
-            case "2" : print("create")
+            case "2" : crud.create_console()
             case "3" : print("update")
             case "4" : print("delete")
             case _ : print("Masukkan input yang valid!! (1/2/3/4)")

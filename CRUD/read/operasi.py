@@ -13,8 +13,8 @@ def create_db():
     
     data["pk"] = "".join(random.choice(string.ascii_letters) for i in range(6))
     data["date_add"] = time.strftime("%Y:%m:%d-%H:%M:%S:%Z",time.gmtime())
-    data["judul"] = judul + database.TEMPLATE["judul"][len(judul)]
-    data["penulis"] = penulis + database.TEMPLATE["penulis"][len(penulis)]
+    data["judul"] = judul + database.TEMPLATE["judul"][len(judul):]
+    data["penulis"] = penulis + database.TEMPLATE["penulis"][len(penulis):]
     data["tahun"] = tahun 
     
     all_data = f"{data["pk"]} , {data["date_add"]} , {data["judul"]} , {data["penulis"]} , {data["tahun"]}"
