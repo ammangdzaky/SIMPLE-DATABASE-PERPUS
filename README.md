@@ -1,6 +1,6 @@
 # Proyek Database Perpustakaan Sederhana
 
-Proyek ini adalah aplikasi sederhana untuk mengelola database perpustakaan menggunakan Python. Program ini memiliki empat opsi utama: **Read**, **Create**, **Update**, dan **Delete** (CRUD) untuk memanipulasi data buku dalam perpustakaan.
+Proyek ini adalah aplikasi sederhana untuk mengelola database perpustakaan menggunakan Python. Program ini memiliki empat opsi utama: **Read**, **Create**, **Update**, dan **Delete** untuk memanipulasi data buku dalam perpustakaan.
 
 ## Fitur
 
@@ -20,7 +20,7 @@ Proyek ini adalah aplikasi sederhana untuk mengelola database perpustakaan mengg
 2. Masuk ke direktori proyek:
   gunakan perintah berikut
   ```
-  cd repo
+  cd SIMPLE-DATABASE-PERPUS
   ```
 
 3. Jalankan program:
