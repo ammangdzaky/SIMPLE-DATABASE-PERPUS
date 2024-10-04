@@ -13,15 +13,18 @@ Proyek ini adalah aplikasi sederhana untuk mengelola database perpustakaan mengg
 
 1. Clone repositori ini ke komputer lokal Anda:
   gunakan perintah berikut
-  ````bash
+  ```
   git clone https://github.com/username/repo.git](https://github.com/ammangdzaky/SIMPLE-DATABASE-PERPUS.git
+  ```
 
 2. Masuk ke direktori proyek:
   gunakan perintah berikut
-  ````bash
+  ```
   cd repo
+  ```
 
 3. Jalankan program:
   gunakan perintah berikut
-  ````bash
+  ```
   python main.py
+  ```
