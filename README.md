@@ -14,7 +14,7 @@ Proyek ini adalah aplikasi sederhana untuk mengelola database perpustakaan mengg
 1. Clone repositori ini ke komputer lokal Anda:
   gunakan perintah berikut
   ```
-  git clone https://github.com/username/repo.git](https://github.com/ammangdzaky/SIMPLE-DATABASE-PERPUS.git
+  git clone https://github.com/ammangdzaky/SIMPLE-DATABASE-PERPUS.git
   ```
 
 2. Masuk ke direktori proyek:
