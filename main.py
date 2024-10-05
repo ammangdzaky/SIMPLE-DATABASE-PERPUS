@@ -58,4 +58,4 @@ if __name__ == "__main__":
         if is_break == "y" or is_break == "Y":
             break
     
-    print("\nOKEE, TERIMA KASIH ORANG BAIK\n")
+    print("\nOKEE, SEMOGA HARIMU SELALU BERJALAN MULUS ORANG BAIK\n")
