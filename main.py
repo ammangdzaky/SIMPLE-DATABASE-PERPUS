@@ -48,7 +48,7 @@ if __name__ == "__main__":
             case "1" : crud.read_console()
             case "2" : crud.create_console()
             case "3" : crud.update_console()
-            case "4" : print("delete")
+            case "4" : crud.delete_console()
             case _ : print("Masukkan input yang valid!! (1/2/3/4)")
         
         # print("\n==============================\n")
