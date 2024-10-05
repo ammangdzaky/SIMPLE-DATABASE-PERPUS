@@ -17,7 +17,7 @@ def create_db():
     data["penulis"] = penulis + database.TEMPLATE["penulis"][len(penulis):]
     data["tahun"] = tahun 
     
-    all_data = f"{data["pk"]} , {data["date_add"]} , {data["judul"]} , {data["penulis"]} , {data["tahun"]}"
+    all_data = f"{data["pk"]},{data["date_add"]},{data["judul"]},{data["penulis"]},{data["tahun"]}"
     print(all_data)
     
     try:
@@ -26,12 +26,21 @@ def create_db():
     except:
         print("GAGAL BJIR")
         
-def read():
+def read(**kwargs):
+    
     try:
         with open(database.DB_NAME, "r") as f:
             content = f.readlines()
-            return content
+            panjang_data = len(content)
+            if "index" in kwargs:
+                indeks = kwargs["index"] - 1
+                if indeks < 0 or indeks > panjang_data:
+                    return False
+                else:
+                    return content[indeks]
+            else:
+                return content
     except:
-        print("Lu gagal WAKWKAK")
+        print("EROR")
         return False
 

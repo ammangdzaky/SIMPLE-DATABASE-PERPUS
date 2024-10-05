@@ -14,7 +14,7 @@ if __name__ == "__main__":
     
     # membuat database.txt jika belum add
     crud.init_console()
-    
+
     while True:
         
         system_operation = os.name
@@ -47,14 +47,14 @@ if __name__ == "__main__":
         match opsi_user:
             case "1" : crud.read_console()
             case "2" : crud.create_console()
-            case "3" : print("update")
+            case "3" : crud.update_console()
             case "4" : print("delete")
             case _ : print("Masukkan input yang valid!! (1/2/3/4)")
         
         # print("\n==============================\n")
         
         #break
-        is_break = input("\nApakah anda ingin berhenti (y/n) : ")
+        is_break = input("\nAPAKAH ANDA INGIN KELUAR DARI PROGRAM DATABASE PERPUSTAKAAN? (y/n) : ")
         if is_break == "y" or is_break == "Y":
             break
     

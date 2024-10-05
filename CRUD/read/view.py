@@ -27,9 +27,10 @@ def read_console():
         judul = data_break[2][:40]  
         penulis = data_break[3][:40]  
         tahun = data_break[4][:11]
-        print(f"| {str(index + 1).center(5)} | {judul.center(40)} | {penulis.center(40)} | {tahun.center(12)} |")
+        print(f"| {str(index + 1).center(5)} | {(judul.center(40)).title()} | {(penulis.center(40)).title()} | {tahun.center(12)} |")
 
     #footer table
     print("="*110)
+    
 
 

@@ -7,7 +7,7 @@ TEMPLATE = {
     "date_add" : "yyyy-mm-dd",
     "penulis" : " "*255,
     "judul" : " "*255,
-    "tahun" : "xxxx"
+    "tahun" : "xxxxx"
 }
 
 def init_console():
