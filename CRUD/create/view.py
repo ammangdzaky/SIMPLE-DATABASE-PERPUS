@@ -4,6 +4,8 @@ from ..read import view
 
 def create_console():
     
+    print("="*110,"\n")
+    
     print("MEMBUAT DATA BUKU BARU!!\n")
 
     judul = input("MASUKKAN JUDUL\t\t: ")

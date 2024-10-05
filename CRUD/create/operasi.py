@@ -11,9 +11,9 @@ def create(judul,penulis,tahun):
     data["date_add"] = time.strftime("%Y:%m:%d-%H:%M:%S:%Z", time.gmtime())
     data["judul"] = judul + database.TEMPLATE["judul"][len(judul):]
     data["penulis"] = penulis + database.TEMPLATE["penulis"][len(penulis):]
-    data["tahun"] = str(tahun)
+    data["tahun"] = tahun
     
-    all_data = f"\n{data["pk"]} , {data["date_add"]} , {data["judul"]} , {data["penulis"]} , {data["tahun"]}"
+    all_data = f"\n{data["pk"]},{data["date_add"]},{data["judul"]},{data["penulis"]},{data["tahun"]}"
     
     try:
         with open(database.DB_NAME, mode="a", encoding="utf-8") as f:
